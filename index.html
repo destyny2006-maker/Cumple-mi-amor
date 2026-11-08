@@ -2,93 +2,210 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Una sorpresa para ti ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz cumpleaños ❤️</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Georgia, serif;
-      color: #fceaf1;
-      background: linear-gradient(
-        135deg,
-        #170f1b,
-        #392033,
-        #17111c
-      );
-      overflow: hidden;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  color: #fceaf1;
+  background: linear-gradient(135deg,#170f1b,#392033,#17111c);
+  overflow-x: hidden;
+}
 
-    .sorpresa {
-      text-align: center;
-      padding: 30px 20px;
-      max-width: 400px;
-      animation: aparecer 2s ease;
-    }
+.pantalla {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
 
-    .corazon {
-      font-size: 65px;
-      animation: latido 1.5s infinite;
-    }
+.contenido {
+  width: 100%;
+  max-width: 420px;
+  animation: aparecer 1.5s ease;
+}
 
-    h1 {
-      color: #f4c4d8;
-      font-size: 32px;
-      font-weight: normal;
-    }
+.oculto {
+  display: none !important;
+}
 
-    p {
-      color: #e7cbd7;
-      font-size: 17px;
-      line-height: 1.6;
-    }
+.corazon {
+  font-size: 65px;
+  animation: latido 1.5s infinite;
+}
 
-    button {
-      margin-top: 25px;
-      padding: 16px 28px;
-      border: 1px solid #edc4d7;
-      border-radius: 30px;
-      background: #c18da5;
-      color: #24131e;
-      font-size: 16px;
-      cursor: pointer;
-    }
+h1 {
+  color: #f4c4d8;
+  font-size: 30px;
+  font-weight: normal;
+}
 
-    button:active {
-      transform: scale(0.95);
-    }
+p {
+  color: #e7cbd7;
+  line-height: 1.7;
+  font-size: 16px;
+}
 
-    @keyframes latido {
-      50% {
-        transform: scale(1.2);
-      }
-    }
+button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  border: 1px solid #edc4d7;
+  border-radius: 30px;
+  background: #c18da5;
+  color: #24131e;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-    @keyframes aparecer {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
+/* PASTEL */
+
+.pastel {
+  position: relative;
+  width: 270px;
+  height: 260px;
+  margin: 45px auto 20px;
+}
+
+.base {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 250px;
+  height: 85px;
+  background: linear-gradient(90deg,#bd7795,#f2c4d6,#bd7795);
+  border-radius: 12px 12px 20px 20px;
+  box-shadow: 0 12px 25px #0008;
+}
+
+.medio {
+  position: absolute;
+  bottom: 95px;
+  left: 35px;
+  width: 200px;
+  height: 75px;
+  background: linear-gradient(90deg,#e8b1ca,#fff0f5,#d998b5);
+  border-radius: 12px 12px 5px 5px;
+}
+
+.superior {
+  position: absolute;
+  bottom: 170px;
+  left: 65px;
+  width: 140px;
+  height: 60px;
+  background: linear-gradient(90deg,#c887a4,#ffe3ee,#c887a4);
+  border-radius: 12px 12px 5px 5px;
+}
+
+.glaseado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17px;
+  background: #fff0f5;
+  border-radius: 50%;
+}
+
+.texto-pastel {
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  left: 0;
+  width: 100%;
+  color: #8b405f;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.corazon-pastel {
+  position: absolute;
+  z-index: 2;
+  top: 48px;
+  width: 100%;
+  color: #a83d65;
+  font-size: 20px;
+}
+
+/* VELAS */
+
+.velas {
+  position: absolute;
+  bottom: 230px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.vela {
+  position: relative;
+  width: 10px;
+  height: 38px;
+  background: repeating-linear-gradient(
+    45deg,#fff0f5 0 5px,#d78aa9 5px 9px
+  );
+  border-radius: 3px;
+}
+
+.llama {
+  position: absolute;
+  width: 13px;
+  height: 19px;
+  background: #ffd66b;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  top: -20px;
+  left: -2px;
+  box-shadow: 0 0 15px #ffb52e;
+  animation: fuego .5s infinite alternate;
+}
+
+@keyframes fuego {
+  to {
+    transform: rotate(-35deg) scale(.8);
+  }
+}
+
+.decoracion {
+  font-size: 22px;
+  color: #f3c2d6;
+}
+
+@keyframes latido {
+  50% { transform: scale(1.2); }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="sorpresa">
+<!-- PRIMERA PANTALLA -->
+
+<section class="pantalla" id="inicio">
+  <div class="contenido">
 
     <div class="corazon">❤️</div>
 
@@ -105,13 +222,71 @@
     </button>
 
   </div>
+</section>
 
-  <script>
-    function abrirSorpresa() {
-      alert("¡Feliz cumpleaños, mi amor! ❤️");
-    }
-  </script>
+
+<!-- SEGUNDA PANTALLA -->
+
+<section class="pantalla oculto" id="cumpleanos">
+  <div class="contenido">
+
+    <div class="decoracion">✦ ✧ ♡ ✧ ✦</div>
+
+    <h1>¡Feliz cumpleaños!</h1>
+
+    <p>Hoy es un día muy especial...</p>
+
+    <div class="pastel">
+
+      <div class="velas">
+        <div class="vela"><div class="llama"></div></div>
+        <div class="vela"><div class="llama"></div></div>
+        <div class="vela"><div class="llama"></div></div>
+      </div>
+
+      <div class="superior">
+        <div class="glaseado"></div>
+      </div>
+
+      <div class="medio">
+        <div class="glaseado"></div>
+        <div class="texto-pastel">
+          Feliz cumpleaños,<br>mi amor
+        </div>
+        <div class="corazon-pastel">♥</div>
+      </div>
+
+      <div class="base">
+        <div class="glaseado"></div>
+      </div>
+
+    </div>
+
+    <h1>Feliz cumpleaños, mi amor ❤️</h1>
+
+    <p>
+      Que la vida te regale infinitas razones
+      para sonreír y que todos tus sueños
+      encuentren su camino.
+    </p>
+
+    <div class="decoracion">♡ ✨ ♡ ✨ ♡</div>
+
+  </div>
+</section>
+
+
+<script>
+function abrirSorpresa() {
+
+  document.getElementById("inicio").classList.add("oculto");
+
+  document.getElementById("cumpleanos").classList.remove("oculto");
+
+  window.scrollTo(0, 0);
+
+}
+</script>
 
 </body>
 </html>
-  
