@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feliz cumpleaños ❤️</title>
+<title>Feliz cumpleaños, mi amor ❤️</title>
 
 <style>
 * {
@@ -16,7 +16,12 @@ body {
   min-height: 100vh;
   font-family: Georgia, serif;
   color: #fceaf1;
-  background: linear-gradient(135deg,#170f1b,#392033,#17111c);
+  background: linear-gradient(
+    135deg,
+    #170f1b,
+    #392033,
+    #17111c
+  );
   overflow-x: hidden;
 }
 
@@ -67,6 +72,17 @@ button {
   cursor: pointer;
 }
 
+button:active {
+  transform: scale(.95);
+}
+
+/* DECORACIONES */
+
+.decoracion {
+  font-size: 22px;
+  color: #f3c2d6;
+}
+
 /* PASTEL */
 
 .pastel {
@@ -82,7 +98,12 @@ button {
   left: 10px;
   width: 250px;
   height: 85px;
-  background: linear-gradient(90deg,#bd7795,#f2c4d6,#bd7795);
+  background: linear-gradient(
+    90deg,
+    #bd7795,
+    #f2c4d6,
+    #bd7795
+  );
   border-radius: 12px 12px 20px 20px;
   box-shadow: 0 12px 25px #0008;
 }
@@ -93,7 +114,12 @@ button {
   left: 35px;
   width: 200px;
   height: 75px;
-  background: linear-gradient(90deg,#e8b1ca,#fff0f5,#d998b5);
+  background: linear-gradient(
+    90deg,
+    #e8b1ca,
+    #fff0f5,
+    #d998b5
+  );
   border-radius: 12px 12px 5px 5px;
 }
 
@@ -103,7 +129,12 @@ button {
   left: 65px;
   width: 140px;
   height: 60px;
-  background: linear-gradient(90deg,#c887a4,#ffe3ee,#c887a4);
+  background: linear-gradient(
+    90deg,
+    #c887a4,
+    #ffe3ee,
+    #c887a4
+  );
   border-radius: 12px 12px 5px 5px;
 }
 
@@ -154,7 +185,9 @@ button {
   width: 10px;
   height: 38px;
   background: repeating-linear-gradient(
-    45deg,#fff0f5 0 5px,#d78aa9 5px 9px
+    45deg,
+    #fff0f5 0 5px,
+    #d78aa9 5px 9px
   );
   border-radius: 3px;
 }
@@ -172,19 +205,54 @@ button {
   animation: fuego .5s infinite alternate;
 }
 
+/* FOTOGRAFÍA EN CORAZÓN */
+
+.foto-corazon {
+  width: 190px;
+  height: 190px;
+  margin: 35px auto;
+  filter: drop-shadow(0 0 12px #e99abf);
+  animation: latido 2s infinite;
+}
+
+.foto-corazon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(
+    50% 100%,
+    10% 60%,
+    0 35%,
+    5% 15%,
+    20% 0,
+    38% 0,
+    50% 18%,
+    62% 0,
+    80% 0,
+    95% 15%,
+    100% 35%,
+    90% 60%
+  );
+}
+
+.dedicatoria {
+  color: #f5c9dc;
+  font-style: italic;
+  padding: 0 15px;
+}
+
+/* ANIMACIONES */
+
+@keyframes latido {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
 @keyframes fuego {
   to {
     transform: rotate(-35deg) scale(.8);
   }
-}
-
-.decoracion {
-  font-size: 22px;
-  color: #f3c2d6;
-}
-
-@keyframes latido {
-  50% { transform: scale(1.2); }
 }
 
 @keyframes aparecer {
@@ -205,6 +273,7 @@ button {
 <!-- PRIMERA PANTALLA -->
 
 <section class="pantalla" id="inicio">
+
   <div class="contenido">
 
     <div class="corazon">❤️</div>
@@ -222,26 +291,44 @@ button {
     </button>
 
   </div>
+
 </section>
 
 
 <!-- SEGUNDA PANTALLA -->
 
 <section class="pantalla oculto" id="cumpleanos">
+
   <div class="contenido">
 
-    <div class="decoracion">✦ ✧ ♡ ✧ ✦</div>
+    <div class="decoracion">
+      ✦ ✧ ♡ ✧ ✦
+    </div>
 
     <h1>¡Feliz cumpleaños!</h1>
 
-    <p>Hoy es un día muy especial...</p>
+    <p>
+      Hoy es un día muy especial...
+    </p>
+
+    <!-- PASTEL -->
 
     <div class="pastel">
 
       <div class="velas">
-        <div class="vela"><div class="llama"></div></div>
-        <div class="vela"><div class="llama"></div></div>
-        <div class="vela"><div class="llama"></div></div>
+
+        <div class="vela">
+          <div class="llama"></div>
+        </div>
+
+        <div class="vela">
+          <div class="llama"></div>
+        </div>
+
+        <div class="vela">
+          <div class="llama"></div>
+        </div>
+
       </div>
 
       <div class="superior">
@@ -249,11 +336,18 @@ button {
       </div>
 
       <div class="medio">
+
         <div class="glaseado"></div>
+
         <div class="texto-pastel">
-          Feliz cumpleaños,<br>mi amor
+          Feliz cumpleaños,<br>
+          mi amor
         </div>
-        <div class="corazon-pastel">♥</div>
+
+        <div class="corazon-pastel">
+          ♥
+        </div>
+
       </div>
 
       <div class="base">
@@ -270,22 +364,47 @@ button {
       encuentren su camino.
     </p>
 
-    <div class="decoracion">♡ ✨ ♡ ✨ ♡</div>
+    <div class="decoracion">
+      ♡ ✨ ♡ ✨ ♡
+    </div>
+
+    <!-- FOTOGRAFÍA -->
+
+    <div class="foto-corazon">
+
+      <img
+        src="IMG-20261105-WA0004.jpg"
+        alt="Una persona muy especial"
+      >
+
+    </div>
+
+    <!-- DEDICATORIA -->
+
+    <p class="dedicatoria">
+      Una de las cosas más bonitas de mi vida
+      es poder compartir momentos contigo. ❤️
+    </p>
 
   </div>
+
 </section>
 
 
 <script>
+
 function abrirSorpresa() {
 
-  document.getElementById("inicio").classList.add("oculto");
+  document.getElementById("inicio")
+    .classList.add("oculto");
 
-  document.getElementById("cumpleanos").classList.remove("oculto");
+  document.getElementById("cumpleanos")
+    .classList.remove("oculto");
 
   window.scrollTo(0, 0);
 
 }
+
 </script>
 
 </body>
