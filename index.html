@@ -4,266 +4,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feliz cumpleaños, mi amor ❤️</title>
+<title>Feliz cumpleaños, mi niña hermosa ❤️</title>
 
 <style>
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Georgia, serif;
-  color: #fceaf1;
-  background: linear-gradient(
-    135deg,
-    #170f1b,
-    #392033,
-    #17111c
-  );
-  overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background: linear-gradient(145deg, #170b18, #38152e, #160d20);
+    color: white;
+    text-align: center;
 }
 
 .pantalla {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 25px;
-}
-
-.contenido {
-  width: 100%;
-  max-width: 420px;
-  animation: aparecer 1.5s ease;
+    min-height: 100vh;
+    padding: 35px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .oculto {
-  display: none !important;
-}
-
-.corazon {
-  font-size: 65px;
-  animation: latido 1.5s infinite;
+    display: none;
 }
 
 h1 {
-  color: #f4c4d8;
-  font-size: 30px;
-  font-weight: normal;
+    color: #ffd6e7;
+    font-size: 30px;
+    font-weight: normal;
+    text-shadow: 0 0 15px #ff75b5;
 }
 
-p {
-  color: #e7cbd7;
-  line-height: 1.7;
-  font-size: 16px;
+.subtitulo {
+    color: #f5c9df;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 button {
-  padding: 15px 25px;
-  margin-top: 20px;
-  border: 1px solid #edc4d7;
-  border-radius: 30px;
-  background: #c18da5;
-  color: #24131e;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:active {
-  transform: scale(.95);
-}
-
-/* DECORACIONES */
-
-.decoracion {
-  font-size: 22px;
-  color: #f3c2d6;
+    background: linear-gradient(135deg, #f5a6ca, #c94e91);
+    color: white;
+    border: 1px solid #ffd4e8;
+    border-radius: 30px;
+    padding: 14px 28px;
+    font-size: 17px;
+    margin-top: 25px;
+    box-shadow: 0 0 20px #d75a9b66;
 }
 
 /* PASTEL */
 
 .pastel {
-  position: relative;
-  width: 270px;
-  height: 260px;
-  margin: 45px auto 20px;
-}
-
-.base {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 250px;
-  height: 85px;
-  background: linear-gradient(
-    90deg,
-    #bd7795,
-    #f2c4d6,
-    #bd7795
-  );
-  border-radius: 12px 12px 20px 20px;
-  box-shadow: 0 12px 25px #0008;
-}
-
-.medio {
-  position: absolute;
-  bottom: 95px;
-  left: 35px;
-  width: 200px;
-  height: 75px;
-  background: linear-gradient(
-    90deg,
-    #e8b1ca,
-    #fff0f5,
-    #d998b5
-  );
-  border-radius: 12px 12px 5px 5px;
-}
-
-.superior {
-  position: absolute;
-  bottom: 170px;
-  left: 65px;
-  width: 140px;
-  height: 60px;
-  background: linear-gradient(
-    90deg,
-    #c887a4,
-    #ffe3ee,
-    #c887a4
-  );
-  border-radius: 12px 12px 5px 5px;
-}
-
-.glaseado {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 17px;
-  background: #fff0f5;
-  border-radius: 50%;
-}
-
-.texto-pastel {
-  position: absolute;
-  z-index: 2;
-  top: 28px;
-  left: 0;
-  width: 100%;
-  color: #8b405f;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.corazon-pastel {
-  position: absolute;
-  z-index: 2;
-  top: 48px;
-  width: 100%;
-  color: #a83d65;
-  font-size: 20px;
-}
-
-/* VELAS */
-
-.velas {
-  position: absolute;
-  bottom: 230px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.vela {
-  position: relative;
-  width: 10px;
-  height: 38px;
-  background: repeating-linear-gradient(
-    45deg,
-    #fff0f5 0 5px,
-    #d78aa9 5px 9px
-  );
-  border-radius: 3px;
-}
-
-.llama {
-  position: absolute;
-  width: 13px;
-  height: 19px;
-  background: #ffd66b;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  top: -20px;
-  left: -2px;
-  box-shadow: 0 0 15px #ffb52e;
-  animation: fuego .5s infinite alternate;
-}
-
-/* FOTOGRAFÍA EN CORAZÓN */
-
-.foto-corazon {
-  width: 190px;
-  height: 190px;
-  margin: 35px auto;
-  filter: drop-shadow(0 0 12px #e99abf);
-  animation: latido 2s infinite;
-}
-
-.foto-corazon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  clip-path: polygon(
-    50% 100%,
-    10% 60%,
-    0 35%,
-    5% 15%,
-    20% 0,
-    38% 0,
-    50% 18%,
-    62% 0,
-    80% 0,
-    95% 15%,
-    100% 35%,
-    90% 60%
-  );
-}
-
-.dedicatoria {
-  color: #f5c9dc;
-  font-style: italic;
-  padding: 0 15px;
-}
-
-/* ANIMACIONES */
-
-@keyframes latido {
-  50% {
-    transform: scale(1.08);
-  }
-}
-
-@keyframes fuego {
-  to {
-    transform: rotate(-35deg) scale(.8);
-  }
+    position: relative;
+    width: 290px;
+    height: 270px;
+    margin: 35px auto 20px;
+    animation: aparecer 2s ease;
 }
 
 @keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.base {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 270px;
+    height: 90px;
+    background: linear-gradient(180deg, #f8a8c9, #c85b91);
+    border-radius: 15px 15px 25px 25px;
+    box-shadow: 0 10px 20px #0008;
+}
+
+.medio {
+    position: absolute;
+    bottom: 85px;
+    left: 35px;
+    width: 220px;
+    height: 75px;
+    background: linear-gradient(180deg, #ffe0e9, #ed9bbd);
+    border-radius: 15px 15px 8px 8px;
+}
+
+.superior {
+    position: absolute;
+    bottom: 155px;
+    left: 65px;
+    width: 160px;
+    height: 65px;
+    background: linear-gradient(180deg, #fff0f4, #f4b7ce);
+    border-radius: 15px 15px 8px 8px;
+}
+
+.glaseado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 17px;
+    background: #fff0f5;
+    border-radius: 50%;
+}
+
+.texto-pastel {
+    position: absolute;
+    z-index: 2;
+    bottom: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 245px;
+    color: #fff9f7;
+    font-size: 14px;
+    line-height: 1.35;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 0 1px 4px #8b315c;
+}
+
+.texto-pastel span {
+    display: block;
+    font-size: 19px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.velas {
+    position: absolute;
+    z-index: 4;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 22px;
+}
+
+.vela {
+    width: 9px;
+    height: 42px;
+    border-radius: 5px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fff 0 5px,
+        #e978a8 5px 10px
+    );
+}
+
+.llama {
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    background: #ffcb63;
+    border-radius: 50% 50% 50% 50%;
+    top: -20px;
+    left: -1px;
+    box-shadow: 0 0 15px #ffb52e;
+    animation: bailar 0.5s infinite alternate;
+}
+
+@keyframes bailar {
+    from {
+        transform: scale(1) rotate(-8deg);
+    }
+    to {
+        transform: scale(1.15) rotate(8deg);
+    }
+}
+
+/* FOTO EN FORMA DE CORAZÓN */
+
+.foto-corazon {
+    width: 205px;
+    height: 195px;
+    margin: 25px auto;
+    filter: drop-shadow(0 0 15px #ff80b5);
+}
+
+.foto-corazon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(
+        50% 95%,
+        7% 48%,
+        2% 35%,
+        5% 21%,
+        16% 11%,
+        30% 12%,
+        50% 34%,
+        70% 12%,
+        84% 11%,
+        95% 21%,
+        98% 35%,
+        93% 48%
+    );
+}
+
+.dedicatoria {
+    max-width: 330px;
+    color: #ffd6e8;
+    font-size: 18px;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 15px auto;
+}
+
+.reproductor {
+    width: 100%;
+    max-width: 340px;
+    margin: 25px auto;
+    padding: 18px;
+    border: 1px solid #e9a4c7;
+    border-radius: 18px;
+    background: #ffffff12;
+    box-shadow: 0 0 18px #e76ba533;
+}
+
+.reproductor p {
+    color: #ffd6e8;
+    font-size: 18px;
+}
+
+audio {
+    width: 100%;
+}
+
+.final {
+    color: #ffb9d8;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
 }
 </style>
 </head>
@@ -272,139 +254,104 @@ button:active {
 
 <!-- PRIMERA PANTALLA -->
 
-<section class="pantalla" id="inicio">
+<section id="inicio" class="pantalla">
 
-  <div class="contenido">
+    <h1>Una pequeña sorpresa para ti ❤️</h1>
 
-    <div class="corazon">❤️</div>
-
-    <h1>Hay algo especial esperándote...</h1>
-
-    <p>
-      Preparé una pequeña sorpresa
-      para alguien que hace mis días
-      mucho más bonitos.
+    <p class="subtitulo">
+        Hoy es un día muy especial...<br>
+        y preparé algo con mucho cariño.
     </p>
 
-    <button onclick="abrirSorpresa()">
-      Abrir mi sorpresa ❤️
-    </button>
+    <div style="font-size:65px; margin:20px;">
+        💝
+    </div>
 
-  </div>
+    <button onclick="abrirSorpresa()">
+        Abrir mi sorpresa ❤️
+    </button>
 
 </section>
 
 
 <!-- SEGUNDA PANTALLA -->
 
-<section class="pantalla oculto" id="cumpleanos">
+<section id="cumpleanos" class="pantalla oculto">
 
-  <div class="contenido">
+    <h1>Feliz cumpleaños ❤️</h1>
 
-    <div class="decoracion">
-      ✦ ✧ ♡ ✧ ✦
-    </div>
-
-    <h1>¡Feliz cumpleaños!</h1>
-
-    <p>
-      Hoy es un día muy especial...
+    <p class="subtitulo">
+        Para una personita muy especial.
     </p>
 
-    <!-- PASTEL -->
+    <!-- PASTEL ANIMADO -->
 
     <div class="pastel">
 
-      <div class="velas">
+        <div class="base"></div>
+        <div class="medio"></div>
+        <div class="superior"></div>
 
-        <div class="vela">
-          <div class="llama"></div>
+        <div class="velas">
+            <div class="vela"><div class="llama"></div></div>
+            <div class="vela"><div class="llama"></div></div>
+            <div class="vela"><div class="llama"></div></div>
         </div>
-
-        <div class="vela">
-          <div class="llama"></div>
-        </div>
-
-        <div class="vela">
-          <div class="llama"></div>
-        </div>
-
-      </div>
-
-      <div class="superior">
-        <div class="glaseado"></div>
-      </div>
-
-      <div class="medio">
-
-        <div class="glaseado"></div>
 
         <div class="texto-pastel">
-          Feliz cumpleaños,<br>
-          mi amor
+            <span>Feliz cumpleaños</span>
+            Mi niña hermosa,<br>
+            que ilusiona mi vida entera.<br>
+            Te amo ❤️
         </div>
 
-        <div class="corazon-pastel">
-          ♥
-        </div>
-
-      </div>
-
-      <div class="base">
-        <div class="glaseado"></div>
-      </div>
-
-    </div>
-
-    <h1>Feliz cumpleaños, mi amor ❤️</h1>
-
-    <p>
-      Que la vida te regale infinitas razones
-      para sonreír y que todos tus sueños
-      encuentren su camino.
-    </p>
-
-    <div class="decoracion">
-      ♡ ✨ ♡ ✨ ♡
     </div>
 
     <!-- FOTOGRAFÍA -->
 
     <div class="foto-corazon">
-
-      <img
-        src="IMG-20261105-WA0004.jpg"
-        alt="Una persona muy especial"
-      >
-
+        <img
+            src="IMG-20261105-WA0004.jpg"
+            alt="Un recuerdo especial"
+        >
     </div>
 
     <!-- DEDICATORIA -->
 
     <p class="dedicatoria">
-      Una de las cosas más bonitas de mi vida
-      es poder compartir momentos contigo. ❤️
+        Una de las cosas más bonitas de mi vida
+        es poder compartir momentos contigo. ❤️
     </p>
 
-  </div>
+    <!-- CANCIÓN -->
+
+    <div class="reproductor">
+
+        <p>🎵 Una canción para ti ❤️</p>
+
+        <audio controls>
+            <source
+                src="Me%20vas%20a%20Extra%C3%B1ar%20-%2018%20Kilates%20Ft%20Magoman%20%28Live%20Performance%29%28MP3_160K%29.mp3"
+                type="audio/mpeg"
+            >
+            Tu navegador no admite audio.
+        </audio>
+
+    </div>
+
+    <p class="final">
+        Te amo, mi niña hermosa. ❤️
+    </p>
 
 </section>
 
 
 <script>
-
 function abrirSorpresa() {
+    document.getElementById("inicio").classList.add("oculto");
 
-  document.getElementById("inicio")
-    .classList.add("oculto");
-
-  document.getElementById("cumpleanos")
-    .classList.remove("oculto");
-
-  window.scrollTo(0, 0);
-
+    document.getElementById("cumpleanos").classList.remove("oculto");
 }
-
 </script>
 
 </body>
