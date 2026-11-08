@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Una sorpresa para ti ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Georgia, serif;
+      color: #fceaf1;
+      background: linear-gradient(
+        135deg,
+        #170f1b,
+        #392033,
+        #17111c
+      );
+      overflow: hidden;
+    }
+
+    .sorpresa {
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 400px;
+      animation: aparecer 2s ease;
+    }
+
+    .corazon {
+      font-size: 65px;
+      animation: latido 1.5s infinite;
+    }
+
+    h1 {
+      color: #f4c4d8;
+      font-size: 32px;
+      font-weight: normal;
+    }
+
+    p {
+      color: #e7cbd7;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 16px 28px;
+      border: 1px solid #edc4d7;
+      border-radius: 30px;
+      background: #c18da5;
+      color: #24131e;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    @keyframes latido {
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="sorpresa">
+
+    <div class="corazon">❤️</div>
+
+    <h1>Hay algo especial esperándote...</h1>
+
+    <p>
+      Preparé una pequeña sorpresa
+      para alguien que hace mis días
+      mucho más bonitos.
+    </p>
+
+    <button onclick="abrirSorpresa()">
+      Abrir mi sorpresa ❤️
+    </button>
+
+  </div>
+
+  <script>
+    function abrirSorpresa() {
+      alert("¡Feliz cumpleaños, mi amor! ❤️");
+    }
+  </script>
+
+</body>
+</html>
+  
